@@ -5,7 +5,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.welcome-section {
+.welcome-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -76,25 +76,74 @@ button:hover {
     cursor: pointer;
 }
 
-.about-section {
+.about-container {
     background-color: var(--bkg2);
-    padding-bottom: 20px;
+    display: flex;
 }
 .about-heading {
     font-size: 30px;
 }
-.about-container {
-    width: 600px;
-    padding-top: 20px;
+.about-text {
+    margin-top: 0px;
+}
+
+.about-section {
+    width: 690px;
+    padding-bottom: 40px;
+    padding-top: 40px;
     margin-left: 100px;
-    padding-left: 0px;
+    padding-left: 20px;
+    float: left;
 }
 
 p {
     margin-bottom: 0px;
 }
 
-.options-section {
+.dev-info-container {
     background-color: var(--bkg1);
-    padding: 150px;
+    padding: 30px;
+    padding-bottom: 30px;
+    display: flex;
 }
+.dev-photos {
+    float: left;
+    width: 600px;
+    display: flex;
+}
+.dev-img {
+    margin-top: 55px;
+    margin-left: 40px;
+}
+.meet-devs-section {
+    width: 550px;
+    padding: 0px;
+    padding-top: 20px;
+    margin-right: 0px;
+    margin-left: 100px;
+}
+
+.meet-devs-heading {
+    font-size: 30px;
+}
+
+.biographies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: lighter;
+}
+
+.dev-name {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+
+.dev-description {
+    margin-top: 0px;
+    font-size: 15px;
+}
+
+

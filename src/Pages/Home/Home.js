@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import { useRef } from 'react';
 
 import sign_welcome from '../../assets/sign-welcome.png'
+import tam_photo from '../../assets/tam_photo.jpg'
+import julie_photo from '../../assets/julie_photo.jpg'
 
 const Home = () => {
     let navigate = useNavigate();
@@ -14,7 +16,8 @@ const Home = () => {
     return (
         <div className="home">
 
-            <div className="welcome-section">
+
+            <div className="welcome-container">
             <img src={ sign_welcome } alt="Welcome spelled in sign language" width="20%" height="auto"/>
                 <div className="welcome-heading">
                     <h1>to</h1>
@@ -25,24 +28,28 @@ const Home = () => {
                 <p className="arrow down" onClick={handleClick}></p>
             </div>
 
-            <div ref={ref} className="about-section">
-                <section className="about-container">
+
+
+            <div ref={ref} className="about-container">
+                <section className="about-section">
                     <div className="about-heading">
-                        <p>About</p>
+                        <p className="about-text">About</p>
                         <div className="line"/>
                     </div>
                     <p>
                         Hello! 
                     </p>
                     <p>   
-                        Sign language game is an interactive game 
-                        created for the purpose of teaching people sign language.
+                        "Sign language game" is an interactive game 
+                        created for the purpose of teaching people American Sign Language.
                     </p>
                     <p>
-                        Our game supports two modes: "Learning" and "Quiz"
+                        Our game supports two modes: "Learning" and "Quiz". The former
+                        allows users to practice and develop their sign language skills
+                        while the latter puts those skills to the test.
                     </p>
                     <p>
-                        This project bodes the use of a sign language recognition 
+                        This project employs the use of a sign language recognition 
                         model trained using the TensorFlow software, as well as an
                         interactive front end created with React.
                     </p>
@@ -52,9 +59,27 @@ const Home = () => {
                 </section>
             </div>
 
-            <div className="options-section">
 
+
+            <div className="dev-info-container">
+                <section className="dev-photos">
+                    <img src={ tam_photo } alt="Tam Huynh" width="46%" height="auto" className="dev-img" />
+                    <img src={ julie_photo } alt="Julie Maricic-Detweiler" width="35%" height="auto" className="dev-img"/>
+                </section>
+                <section className="meet-devs-section">
+                    <div className="meet-devs-heading">
+                        <p >Meet the Devs!</p>
+                        <div className="line"/>
+                    </div>
+                    <div className="biographies">
+                        <p className="dev-name"> <i>Tam Huynh</i></p>
+                        <p className="dev-description">Tam is awesome.</p>
+                        <p className="dev-name"> <i>Julie Maricic-Detweiler</i> </p>
+                        <p className="dev-description">Julie is awesome.</p>
+                    </div>
+                </section>
             </div>
+
 
         </div>
     );
