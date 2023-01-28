@@ -1,1 +1,57 @@
+:root {
+    --bkg1: #add8e6;
+    --button_hover: #9dc0cc;
+}
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    padding-top: 30px;
+    background-color: var(--bkg1);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.welcome-heading {
+    padding: 20px;
+    padding-bottom: 40px;
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.line {
+    height: 1.5px;
+    background: black;
+    margin-top: 5px;
+}
+
+.learn-more {
+    padding-top: 20px;
+}
+
+button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: var(--bkg1);
+    border: 1px, solid;
+    border-color: black;
+    color: black;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: var(--button_hover);
+    cursor: pointer;
+}
 
