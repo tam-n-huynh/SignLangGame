@@ -34,6 +34,7 @@ h1 {
     height: 1.5px;
     background: black;
     margin-top: 5px;
+    margin-bottom: 30px;
 }
 
 .learn-more {
@@ -71,9 +72,13 @@ button:hover {
     -webkit-transform: rotate(45deg);
 }
 
+.down:hover {
+    cursor: pointer;
+}
+
 .about-section {
     background-color: var(--bkg2);
-    padding-bottom: 200px;
+    padding-bottom: 20px;
 }
 .about-heading {
     font-size: 30px;
@@ -82,4 +87,14 @@ button:hover {
     width: 600px;
     padding-top: 20px;
     margin-left: 100px;
+    padding-left: 0px;
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+.options-section {
+    background-color: var(--bkg1);
+    padding: 150px;
 }
