@@ -1,6 +1,8 @@
 :root {
     --bkg1: #add8e6;
+    --bkg2: white;
     --button_hover: #9dc0cc;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .welcome-section {
@@ -8,14 +10,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 70px;
+    padding-right: 70px;
     padding-top: 30px;
+    padding-bottom: 20px;
     background-color: var(--bkg1);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .welcome-heading {
-    padding: 20px;
+    padding: 15px;
     padding-bottom: 40px;
 }
 
@@ -35,19 +37,21 @@ h1 {
 }
 
 .learn-more {
-    padding-top: 20px;
+    padding-top: 30px;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 
 button {
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
     background-color: var(--bkg1);
     border: 1px, solid;
     border-color: black;
     color: black;
-    margin-top: 15px;
+    margin-top: 30px;
 }
 
 button:hover {
@@ -55,3 +59,27 @@ button:hover {
     cursor: pointer;
 }
 
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin: 5px;
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.about-section {
+    background-color: var(--bkg2);
+    padding-bottom: 200px;
+}
+.about-heading {
+    font-size: 30px;
+}
+.about-container {
+    width: 600px;
+    padding-top: 20px;
+    margin-left: 100px;
+}
