@@ -32,7 +32,7 @@ const Home = () => {
             <img src={ sign_welcome } alt="Welcome spelled in sign language" width="25%" height="auto"/>
                 <div className="welcome-heading">
                     <h3>to</h3>
-                    <h2><i>Handy</i></h2>
+                    <h2><i>Handi</i></h2>
                 </div>
                 <button className="play-now-button" onClick={() => {navigate("/quiz") }}>Play Now</button>
                 <p className="learn-more">Learn More</p>
@@ -68,12 +68,13 @@ const Home = () => {
 
                 <section className="other-section">
                     <img src={ hands } alt="Clipart of hands" width="50px" height="50px"/>
-                    <button onClick={ () => {navigate("/learn") }}>IDK</button>
+                    <button onClick={ () => {window.open("https://www.nad.org/resources/american-sign-language/what-is-american-sign-language/", "_blank") }}>Why ASL?</button>
                     <p>
-                        I don't know what to put here ahhh. I 
-                        don't know what to put here ahhh.I don't 
-                        know what to put here ahhh.I don't know what to 
-                        put here ahhh.
+                        Did you know nearly 500,000 users of ASL between the
+                        United States and Canada? Learning ASL can open many
+                        doors for communication as well as improve inclusivity 
+                        for those with deafness and hearing loss. Click the link 
+                        above to learn more.
                     </p>
                 </section>
             </div>
@@ -89,7 +90,7 @@ const Home = () => {
                         Hello! 
                     </p>
                     <p>   
-                        <b><i>Handy</i></b> is an interactive game 
+                        <b><i>Handi</i></b> is an interactive game 
                         created for the purpose of teaching people American Sign Language.
                     </p>
                     <p>
