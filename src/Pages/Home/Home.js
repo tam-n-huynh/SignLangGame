@@ -3,9 +3,17 @@ import { useNavigate } from 'react-router-dom';
 import { useRef } from 'react';
 
 import sign_welcome from '../../assets/sign-welcome.png'
+
 import books from '../../assets/books.png'
 import trophy from '../../assets/trophy.png'
 import hands from '../../assets/hands.png'
+
+import a from '../../assets/about_letters/a.png'
+import b from '../../assets/about_letters/b.png'
+import o from '../../assets/about_letters/o.png'
+import u from '../../assets/about_letters/u.png'
+import t from '../../assets/about_letters/t.png'
+
 import tam_photo from '../../assets/tam_photo.jpg'
 import julie_photo from '../../assets/julie_photo.jpg'
 
@@ -23,8 +31,8 @@ const Home = () => {
             <div className="welcome-container">
             <img src={ sign_welcome } alt="Welcome spelled in sign language" width="25%" height="auto"/>
                 <div className="welcome-heading">
-                    <h2>to</h2>
-                    <h2>Sign Language Game</h2>
+                    <h3>to</h3>
+                    <h2><i>Handy</i></h2>
                 </div>
                 <button className="play-now-button" onClick={() => {navigate("/quiz") }}>Play Now</button>
                 <p className="learn-more">Learn More</p>
@@ -81,7 +89,7 @@ const Home = () => {
                         Hello! 
                     </p>
                     <p>   
-                        "Sign language game" is an interactive game 
+                        <b><i>Handy</i></b> is an interactive game 
                         created for the purpose of teaching people American Sign Language.
                     </p>
                     <p>
@@ -95,15 +103,37 @@ const Home = () => {
                         interactive front end created with React.
                     </p>
                     <p>
-                        See the source code <a href="https://github.com/tam-n-huynh/SignLangGame" target="_blank" rel="noreferrer">HERE</a>
+                        See the source code <a href="https://github.com/tam-n-huynh/SignLangGame" target="_blank" rel="noreferrer">HERE!</a>
                     </p>
+                </section>
+                <section className="about-sign">
+                    <div className="letter-wrapper">
+                        <img src={a} height="70px" width="70px" alt="'a' in sign language" className="about-sign-img"/>
+                        <p>a</p>
+                    </div>
+                    <div className="letter-wrapper">
+                        <p className="p-1">b</p>
+                        <img src={b} height="70px" width="50px" alt="'b' in sign language" className="about-sign-img-1" />
+                    </div>
+                    <div className="letter-wrapper">
+                        <img src={o} height="70px" width="50px" alt="'o' in sign language" className="about-sign-img" />
+                        <p>o</p>
+                    </div>
+                    <div className="letter-wrapper">
+                        <p className="p-1">u</p>
+                        <img src={u} height="100px" width="80px" alt="'u' in sign language" className="about-sign-img-1"/>
+                    </div>
+                    <div className="letter-wrapper">
+                        <img src={t} height="70px" width="70px" alt="'t' in sign language" className="about-sign-img"/>
+                        <p>t</p>
+                    </div>
                 </section>
             </div>
 
 
             <div className="dev-info-container">
                 <section className="dev-photos">
-                    <img src={ tam_photo } alt="Tam Huynh" width="46%" height="auto" className="dev-img" />
+                    <img src={ tam_photo } alt="Tam Huynh" width="48%" height="auto" className="dev-img" />
                     <img src={ julie_photo } alt="Julie Maricic-Detweiler" width="35%" height="auto" className="dev-img"/>
                 </section>
                 <section className="meet-devs-section">
@@ -113,9 +143,17 @@ const Home = () => {
                     </div>
                     <div className="biographies">
                         <p className="dev-name"> <i>Tam Huynh</i></p>
-                        <p className="dev-description">Tam is awesome.</p>
-                        <p className="dev-name"> <i>Julie Maricic-Detweiler</i> </p>
-                        <p className="dev-description">Julie is awesome.</p>
+                        <p className="dev-description">
+                            Tam is a 3rd year Computer Science major at the University of Florida.
+                            He is interested in exploring the field of machine learning and 
+                            artificial intelligence.
+                        </p>
+                        <p className="dev-name"> <i>Julie Maričić-Detweiler</i> </p>
+                        <p className="dev-description">
+                            Julie is a 3rd year Computer Science major at the University of Florida.
+                            She enjoys designing and creating web applications. She also hopes to
+                            learn more about machine learning in the future.
+                        </p>
                     </div>
                 </section>
             </div>

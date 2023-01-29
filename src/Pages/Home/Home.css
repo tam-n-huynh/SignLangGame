@@ -19,15 +19,17 @@
     padding: 15px;
     padding-bottom: 40px;
     padding-top: 0px;
-}
-
-h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
-    font-weight: 50;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 1;
+    margin-top: 10px;
+    letter-spacing: 0.3rem;
 }
 
 .line {
@@ -55,7 +57,7 @@ button {
 button:hover {
     background-color: var(--button_hover);
     cursor: pointer;
-    padding: 15px 35px 15px 35px;
+    padding: 13px 33px 13px 33px;
 }
 
 .arrow {
@@ -130,7 +132,34 @@ p {
     margin-bottom: 0px;
 }
 
+.about-sign {
+    margin-left: 90px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
 
+.about-sign-img {
+    margin: 10px;
+    margin-left: 40px;
+}
+
+.about-sign-img-1 {
+    margin: 10px;
+}
+
+.p-1 {
+    margin-left: 200px;
+}
+
+.letter-wrapper {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+}
 
 
 .dev-info-container {
@@ -161,12 +190,17 @@ p {
     font-size: 30px;
 }
 
+.meet-devs-section .line {
+    margin-bottom: 10px;
+}
+
 .biographies {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-weight: lighter;
+    text-align: center;
 }
 
 .dev-name {
