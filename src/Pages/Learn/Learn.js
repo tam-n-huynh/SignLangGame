@@ -2,7 +2,9 @@ import './Learn.css'
 
 const Learn = () => {
     return (
-        <div>Learn</div>
+        <div className="learn">
+            Learn
+        </div>
     );
 }
 
