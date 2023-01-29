@@ -3,6 +3,9 @@ import { useNavigate } from 'react-router-dom';
 import { useRef } from 'react';
 
 import sign_welcome from '../../assets/sign-welcome.png'
+import books from '../../assets/books.png'
+import trophy from '../../assets/trophy.png'
+import hands from '../../assets/hands.png'
 import tam_photo from '../../assets/tam_photo.jpg'
 import julie_photo from '../../assets/julie_photo.jpg'
 
@@ -18,16 +21,33 @@ const Home = () => {
 
 
             <div className="welcome-container">
-            <img src={ sign_welcome } alt="Welcome spelled in sign language" width="20%" height="auto"/>
+            <img src={ sign_welcome } alt="Welcome spelled in sign language" width="25%" height="auto"/>
                 <div className="welcome-heading">
-                    <h1>to</h1>
-                    <h1>Sign Language Game</h1>
+                    <h2>to</h2>
+                    <h2>Sign Language Game</h2>
                 </div>
                 <button className="play-now-button" onClick={() => {navigate("/quiz") }}>Play Now</button>
                 <p className="learn-more">Learn More</p>
                 <p className="arrow down" onClick={handleClick}></p>
             </div>
 
+
+            <div className="game-info-container">
+                <section className="learn-section">
+                    <img src={ books } alt="Clipart of textbooks" height="50px"/>
+                    <p>Learn</p>
+                </section>
+
+                <section className="quiz-section">
+                <img src={ trophy } alt="Clipart of trophy" height="50px"/>
+                    <p>Quiz</p>
+                </section>
+
+                <section className="other-section">
+                    <img src={ hands } alt="Clipart of hands" height="50px"/>
+                    <p>Other</p>
+                </section>
+            </div>
 
 
             <div ref={ref} className="about-container">
@@ -58,7 +78,6 @@ const Home = () => {
                     </p>
                 </section>
             </div>
-
 
 
             <div className="dev-info-container">

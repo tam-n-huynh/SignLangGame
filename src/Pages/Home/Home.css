@@ -10,7 +10,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-right: 70px;
     padding-top: 30px;
     padding-bottom: 20px;
     background-color: var(--bkg1);
@@ -19,15 +18,16 @@
 .welcome-heading {
     padding: 15px;
     padding-bottom: 40px;
+    padding-top: 0px;
 }
 
-h1 {
+h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
-    font-weight: 100;
+    font-size: 50px;
+    font-weight: 50;
 }
 
 .line {
@@ -67,6 +67,9 @@ button:hover {
     padding: 3px;
     margin: 5px;
 }
+.arrow:hover {
+    border-width: 0 5px 5px 0;
+}
 .down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -76,8 +79,37 @@ button:hover {
     cursor: pointer;
 }
 
-.about-container {
+
+
+
+.game-info-container {
     background-color: var(--bkg2);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-info-container section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.test {
+    margin-right: 0px !important;
+    vertical-align: middle;
+}
+
+
+
+
+
+.about-container {
+    background-color: var(--bkg1);
     display: flex;
 }
 .about-heading {
@@ -100,10 +132,14 @@ p {
     margin-bottom: 0px;
 }
 
+
+
+
 .dev-info-container {
-    background-color: var(--bkg1);
+    background-color: var(--bkg2);
     padding: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     display: flex;
 }
 .dev-photos {
