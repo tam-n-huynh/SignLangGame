@@ -44,10 +44,7 @@ h2 {
 }
 
 button {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 10px 30px 10px 30px;
     background-color: var(--bkg1);
     border: 1px, solid;
     border-color: black;
@@ -58,6 +55,7 @@ button {
 button:hover {
     background-color: var(--button_hover);
     cursor: pointer;
+    padding: 15px 35px 15px 35px;
 }
 
 .arrow {
@@ -87,21 +85,21 @@ button:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
 }
 
 .game-info-container section {
     padding-top: 30px;
     padding-bottom: 30px;
+    width: 350px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
-.test {
-    margin-right: 0px !important;
-    vertical-align: middle;
+.game-info-container p  {
+    margin-top: 20px;
+    font-size: small;
+    text-align: center;
 }
 
 
