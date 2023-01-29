@@ -1,0 +1,51 @@
+.dev-info-container {
+    background-color: var(--bkg2);
+    padding: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: flex;
+}
+.dev-photos {
+    float: left;
+    width: 600px;
+    display: flex;
+}
+.dev-img {
+    margin-top: 55px;
+    margin-left: 40px;
+}
+.meet-devs-section {
+    width: 550px;
+    padding: 0px;
+    padding-top: 20px;
+    margin-right: 0px;
+    margin-left: 100px;
+}
+
+.meet-devs-heading {
+    font-size: 30px;
+}
+
+.meet-devs-section .line {
+    margin-bottom: 10px;
+}
+
+.biographies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.dev-name {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+
+.dev-description {
+    margin-top: 0px;
+    font-size: 15px;
+}

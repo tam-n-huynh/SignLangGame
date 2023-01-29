@@ -1,0 +1,58 @@
+:root {
+    --bkg1: #add8e6;
+    --bkg2: white;
+    --button_hover: #9dc0cc;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.about-container {
+    background-color: var(--bkg1);
+    display: flex;
+}
+.about-heading {
+    font-size: 30px;
+}
+.about-text {
+    margin-top: 0px;
+}
+
+.about-section {
+    width: 690px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    margin-left: 100px;
+    padding-left: 20px;
+    float: left;
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+.about-sign {
+    margin-left: 90px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.about-sign-img {
+    margin-left: 40px;
+}
+
+.about-sign-img-1 {
+    margin-left: 5px;
+}
+
+.p-1 {
+    margin-left: 200px;
+}
+
+.letter-wrapper {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+}
