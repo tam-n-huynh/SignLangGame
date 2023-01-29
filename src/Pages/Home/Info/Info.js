@@ -10,7 +10,7 @@ const Info = () => {
     return (
         <div className="game-info-container">
             <section className="learn-section">
-                <img src={ books } alt="Clipart of textbooks" width="50px" height="50px"/>
+                <img class="gimg" src={ books } alt="Clipart of textbooks" width="50px" height="50px"/>
                 <button onClick={ () => {navigate("/learn") }}>Learn Mode</button>
                 <p>
                     <b>Learn Mode</b> offers users the chance to practice
@@ -22,7 +22,7 @@ const Info = () => {
             </section>
 
             <section className="quiz-section">
-            <img src={ trophy } alt="Clipart of trophy" width="50px" height="50px"/>
+            <img class="gimg" src={ trophy } alt="Clipart of trophy" width="50px" height="50px"/>
             <button onClick={ () => {navigate("/quiz") }}>Quiz Mode</button>
                 <p>
                     <b>Quiz Mode</b> allows users to test skills gained
@@ -35,7 +35,7 @@ const Info = () => {
             </section>
 
             <section className="other-section">
-                <img src={ hands } alt="Clipart of hands" width="50px" height="50px"/>
+                <img class="gimg" src={ hands } alt="Clipart of hands" width="50px" height="50px"/>
                 <button onClick={ () => {window.open("https://www.nad.org/resources/american-sign-language/what-is-american-sign-language/", "_blank") }}>Why ASL?</button>
                 <p>
                     Did you know nearly 500,000 users of ASL between the
