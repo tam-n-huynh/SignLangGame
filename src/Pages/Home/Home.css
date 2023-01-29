@@ -15,13 +15,13 @@ button {
     border: 1px, solid;
     border-color: black;
     color: black;
-    margin-top: 30px;
+    transition: 0.3s;
 }
 
 button:hover {
     background-color: var(--button_hover);
     cursor: pointer;
-    padding: 13px 33px 13px 33px;
+    scale: 1.2;
 }
 
 .game-info-container {
