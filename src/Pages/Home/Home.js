@@ -116,12 +116,12 @@ const Home = () => {
                         <img src={b} height="70px" width="50px" alt="'b' in sign language" className="about-sign-img-1" />
                     </div>
                     <div className="letter-wrapper">
-                        <img src={o} height="70px" width="50px" alt="'o' in sign language" className="about-sign-img" />
+                        <img src={o} height="80px" width="60px" alt="'o' in sign language" className="about-sign-img" />
                         <p>o</p>
                     </div>
                     <div className="letter-wrapper">
                         <p className="p-1">u</p>
-                        <img src={u} height="100px" width="80px" alt="'u' in sign language" className="about-sign-img-1"/>
+                        <img src={u} height="80px" width="60px" alt="'u' in sign language" className="about-sign-img-1"/>
                     </div>
                     <div className="letter-wrapper">
                         <img src={t} height="70px" width="70px" alt="'t' in sign language" className="about-sign-img"/>
