@@ -3,22 +3,25 @@ import * as tf from "@tensorflow/tfjs";
 import Webcam from "react-webcam";
 import { nextFrame } from "@tensorflow/tfjs";
 import {drawRect} from "./../../utilities"; 
+import { useNavigate } from 'react-router-dom';
 
 import './Quiz.css'
 
 const Quiz = () => {
 
+  let navigate = useNavigate();
+
   const webcamRef = useRef(null);
   const canvasRef = useRef(null);
+
+  // REFERENCES: https://www.youtube.com/watch?v=ZTSRZt04JkY
 
   // Main function
   const runCoco = async () => {
     // 3. TODO - Load network 
     // e.g. const net = await cocossd.load();
-    // https://tensorflowjsrealtimemodel.s3.au-syd.cloud-object-storage.appdomain.cloud/model.json
     // https://storage.googleapis.com/swhack8tfjs/model.json
-    const net = await tf.loadGraphModel('https://tensorflowjsrealtimemodel.s3.au-syd.cloud-object-storage.appdomain.cloud/model.json')
-    //const net = await tf.loadGraphModel('https://storage.cloud.google.com/swhack8tfjs/model.json')
+    const net = await tf.loadGraphModel('https://storage.cloud.google.com/swhack8tfjs/model.json')
       //Loop and detect hands
     setInterval(() => {
       detect(net);
@@ -79,13 +82,13 @@ const Quiz = () => {
       <div className="Quiz">
       <div className="header-container">
         <div className="headerbar">
-          <div className="header-right">
-            Logo
-          </div>
           <div className="header-left">
-            <button>Home</button>
-            <button>Learn</button>
-            <button>Quiz</button>
+            Handi
+          </div>
+          <div className="header-right">
+            <button onClick={() => {navigate("/")}}>Home</button>
+            <button onClick={() => {navigate("/learn")}}>Learn</button>
+            <button onClick={() => {navigate("/quiz")}}>Quiz</button>
           </div>
         </div>
       </div>

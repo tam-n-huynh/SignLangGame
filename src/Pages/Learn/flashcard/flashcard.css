@@ -1,0 +1,36 @@
+.flash-card {
+    position: relative;
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+    border-radius: 7%;
+    overflow: hidden;
+}
+
+.back {
+    color: black;
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+}
+
+.front {
+    position: absolute;
+    top: 0;
+    background-color: white;
+
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.front:hover {
+    z-index: -1;
+    opacity: 50%;
+}

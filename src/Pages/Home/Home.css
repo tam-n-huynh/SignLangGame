@@ -31,6 +31,10 @@ button:hover {
     justify-content: center;
 }
 
+.game-info-container button {
+    margin-top: 15px;
+}
+
 .game-info-container section {
     padding-top: 30px;
     padding-bottom: 30px;
